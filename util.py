@@ -1,4 +1,4 @@
 # coding:utf-8
 
-def util():
+def hello_util():
     print('Hello Util...')
