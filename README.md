@@ -34,7 +34,7 @@ id号，职位/职务、借款期限(36/60)、工作年限、房产权、用途�
 
 【Score】Max(score)=675.494371, Min(score)=503.161308;
 
-1.XGBoost：
+3.XGBoost：
 
 【Train】The model accuracy is 0.8822, AUC is 0.7800;
 
