@@ -16,4 +16,23 @@ id号，职位/职务、借款期限(36/60)、工作年限、房产权、用途�
 
 2.模型建立：采用CatBoost、LightGBM与XGBoost建模，可获取各自的信贷申请评分，以便进行对比与分析等；
 
+模型结果：
+---------
+1.CatBoost：
+【Train】The model accuracy is 0.8798, AUC is 0.7438;
+【Test】The model accuracy is 0.8789, AUC is 0.7109, KS is 0.3168;
+【Score】Max(score)=694.858773, Min(score)=440.530273;
+
+2.LightGBM：
+【Train】The model accuracy is 0.8762, AUC is 0.7604;
+【Test】The model accuracy is 0.8797, AUC is 0.7037, KS is 0.3044;
+【Score】Max(score)=675.494371, Min(score)=503.161308;
+
+1.XGBoost：
+【Train】The model accuracy is 0.8822, AUC is 0.7800;
+【Test】The model accuracy is 0.8787, AUC is 0.6952, KS is 0.2851;
+【Score】Max(score)=558.257202, Min(score)=488.194519;
+
+*模型其它效果以及数据，详见代码实验！https://github.com/iihcy/Credit_ACard
+
 备注：本可以利用二维交叉矩阵(基于申请评分)进一步验证模型效果，但官方的标准数据比较难获取，因此无法展示业界的模型评价步骤！
